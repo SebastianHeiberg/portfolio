@@ -12,12 +12,14 @@ function App() {
         <Router>
             <div className='App flex flex-col min-h-screen justify-between bg-custom-navy '>
                 <Navbar />
-                <Routes>
-                    <Route path="/" element={<Intro />} />
-                    <Route path="/about" element={<About />} />
-                    <Route path="/contact" element={<Contact />} />
-                    <Route path="/portfolio" element={<Portfolio />} />
-                </Routes>
+                <div className="flex items-start flex-grow justify-center">
+                    <Routes>
+                        <Route path="/" element={<Intro />} />
+                        <Route path="/about" element={<About />} />
+                        <Route path="/contact" element={<Contact />} />
+                        <Route path="/portfolio" element={<Portfolio />} />
+                    </Routes>
+                </div>
                 <Footer />
             </div>
         </Router>

@@ -7,7 +7,7 @@ function Contackform() {
         <form
           action="https://getform.io/slug"
           method="POST"
-          className="flex flex-col w-full md:w-7/12"
+          className="flex flex-col w-full md:w-10/12"
         >
           <input
             type="text"
