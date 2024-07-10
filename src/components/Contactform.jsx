@@ -2,7 +2,7 @@ import React from "react";
 
 function Contackform() {
   return (
-    <div className="flex flex-col mb-10 mx-auto">
+    <div className="flex flex-col mb-10 mx-auto mx-2">
       <div className="flex justify-center item-center">
         <form
           action="https://getform.io/slug"
@@ -13,25 +13,24 @@ function Contackform() {
             type="text"
             name="name"
             placeholder="Dit navn"
-            className="p-2 bg-transparrent border-2 rounded-md focus:outline-none"
+            className="p-2 bg-custom-beige border-2 rounded-md focus:outline-none placeholder-custom-navy"
           />
           <input
             type="email"
             name="email"
             placeholder="Din email"
-            className="p-2 my-2 bg-transparrent border-2 rounded-md focus:outline-none"
+            className="p-2 my-2 bg-custom-beige border-2 rounded-md focus:outline-none placeholder-custom-navy"
           />
           <textarea
             name="message"
             placeholder="Din besked"
             rows="10"
-            className="p-2 mb-4 bg-transparrent border-2 rounded-md focus:outline-none"
+            className="p-2 mb-4 bg-custom-beige border-2 rounded-md focus:outline-none placeholder-custom-navy"
           />
           <button
             type="button"
             className="text-center inline-block px-8 py-3 w-max 
-            text-base font-medium rounded-md text-white bg-gradient-to-r from-yellow-500
-            to-pink-500 drop-shadow-md"
+           font-medium rounded-md text-black drop-shadow-md bg-custom-beige text-custom-navy"
           >
             Kontakt mig
           </button>

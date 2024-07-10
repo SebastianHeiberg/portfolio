@@ -8,20 +8,20 @@ const Navbar = () => {
 
   return (
     <div className="flex flex-col">
-      <nav className={`flex items-center justify-between p-5 bg-white rounded-t-lg ${isOpen ? '' : 'rounded-b-lg'} mx-5 mt-3 shadow-lg`}>
+      <nav className={`flex items-center justify-between p-5 bg-custom-beige rounded-t-lg ${isOpen ? '' : 'rounded-b-lg'} mx-5 mt-3 shadow-lg`}>
         <div className="text-black">
           <Link to="/">
             <FontAwesomeIcon icon={faHome} size="2x" />
           </Link>
         </div>
         <div className="hidden md:flex space-x-4">
-          <Link to="/about" className="py-2 text-black hover:bg-gray-200 whitespace-nowrap">
+            <Link to="/portfolio" className="py-2 text-custom-navy hover:underline whitespace-nowrap">
             Projekter
           </Link>
-          <Link to="/about" className="py-2 text-black hover:bg-gray-200 whitespace-nowrap">
+          <Link to="/about" className="py-2 text-custom-navy hover:underline whitespace-nowrap">
             Om mig
           </Link>
-          <Link to="/Contact" className="py-2 text-black hover:bg-gray-200 whitespace-nowrap">
+          <Link to="/Contact" className="py-2 text-custom-navy hover:underline whitespace-nowrap">
             Kontakt
           </Link>
         </div>
