@@ -3,8 +3,8 @@ import Contackform from "../components/Contactform";
 
 const Contact = () => {
   return (
-    <div>
-      <div className="p-5 flex flex-col items-center justify-center">
+    <div className="p-3">
+      <div className="p-5 flex flex-col items-center justify-center ">
         <p className="mb-5 mt-5 text-custom-beige">
           Send mig en besked eller find mig på{" "}
           <a
@@ -14,7 +14,7 @@ const Contact = () => {
             className="text-blue-500 hover:underline"
           >
             LinkedIn
-          </a>
+          </a> 
         </p>
       </div>
       <Contackform />

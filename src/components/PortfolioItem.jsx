@@ -1,15 +1,17 @@
 import React, { useState } from "react";
 
-function PortfolioItem({ title, imgUrl, stack, link, description }) {
+function PortfolioItem({ title, imgUrl, stack, link}) {
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (
-    <div className="border-2 border-stone-900 rounded-md p-2 mb-4 sm:max-w-xs md:max-w-md lg:max-w-lg mx-auto bg-custom-beige px-4  shadow-lg">
-      <img
-        src={imgUrl}
-        alt="Billede af portfolioprojekt"
-        className="w-full h-36 md:h-48 object-cover cursor-pointer"
-      />
+    <div className="border-2 border-stone-900 rounded-md p-2 mb-4 sm:max-w-xs md:min-w-md lg:max-w-lg mx-auto bg-custom-beige px-4  shadow-lg">
+      <a href={link} target="_blank" rel="noopener noreferrer">        
+        <img
+          src={imgUrl}
+          alt="Billede af portfolioprojekt"
+          className="w-full h-36 md:h-48 object-cover cursor-pointer"
+        />
+      </a>
       <h3 className="tet-lg md:text-xl mb-2 md:mb-3 font-semibold text-custom-navy text-center">
         {title}
       </h3>

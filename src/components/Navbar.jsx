@@ -35,8 +35,8 @@ const Navbar = () => {
           </button>
         </div>
       </nav>
-      <div className={`${isOpen ? 'block' : 'hidden'} md:hidden flex flex-col space-y-4 bg-white rounded-b-lg mx-5`}>
-        <Link to="/about" className="py-2 px-4 text-black hover:bg-gray-200 whitespace-nowrap" onClick={() => setIsOpen(false)}>
+      <div className={`${isOpen ? 'block' : 'hidden'} md:hidden flex flex-col space-y-4 bg-custom-beige rounded-b-lg mx-5`}>
+        <Link to="/portfolio" className="py-2 px-4 text-black hover:bg-gray-200 whitespace-nowrap" onClick={() => setIsOpen(false)}>
           Projekter
         </Link>
         <Link to="/about" className="py-2 px-4 text-black hover:bg-gray-200 whitespace-nowrap" onClick={() => setIsOpen(false)}>
